@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apCurso" prefHeight="293.0" prefWidth="174.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.CursoController">
+   <children>
+      <MenuBar fx:id="menuBar">
+        <menus>
+          <Menu mnemonicParsing="false" text="Opções">
+            <items>
+              <MenuItem fx:id="itemAluno" mnemonicParsing="false" onAction="#onClickAluno" text="Alunos" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="tfNome" layoutX="48.0" layoutY="78.0" />
+      <TextField fx:id="tfSigla" layoutX="51.0" layoutY="129.0" />
+      <ComboBox fx:id="cbArea" layoutX="59.0" layoutY="180.0" prefWidth="150.0" />
+      <Label layoutX="110.0" layoutY="52.0" text="Curso:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="102.0" text="Sigla Curso">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="153.0" text="Area:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnEnviar" layoutX="59.0" layoutY="223.0" mnemonicParsing="false" onAction="#onClickBtn" prefHeight="26.0" prefWidth="115.0" text="Salvar" />
+      <Label fx:id="lblResponse" layoutX="14.0" layoutY="27.0" prefHeight="25.0" prefWidth="325.0" textAlignment="CENTER" textFill="#0ebf2f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

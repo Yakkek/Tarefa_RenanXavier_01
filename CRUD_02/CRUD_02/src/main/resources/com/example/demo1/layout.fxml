@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" prefHeight="325.0" prefWidth="157.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
+   <children>
+       <Button fx:id="btn" layoutX="26.0" layoutY="246.0" onAction="#clickBtn" prefHeight="26.0" prefWidth="159.0" text="Salvar" />
+      <TextField id="tfNome" fx:id="tfNome" layoutX="20.0" layoutY="90.0" />
+      <CheckBox fx:id="checkBox" layoutX="31.0" layoutY="220.0" mnemonicParsing="false" text="Maior de Idade?" />
+      <ComboBox id="cbCurso" fx:id="cbCurso" layoutX="43.0" layoutY="183.0" prefWidth="150.0" />
+      <Label layoutX="80.0" layoutY="56.0" text="Aluno:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="116.0" text="Sexo">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="163.0" text="Curso:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbSexo" layoutX="31.0" layoutY="138.0" prefWidth="150.0" />
+      <Label fx:id="lbl01" layoutX="14.0" layoutY="24.0" prefHeight="25.0" prefWidth="297.0" textAlignment="CENTER" textFill="#0ebf2f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="menuBar" layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Opções">
+            <items>
+              <MenuItem fx:id="itemCurso" mnemonicParsing="false" onAction="#onClickCurso" text="Cursos" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
